@@ -22,7 +22,7 @@ return {
    colors = colors,
 
    -- background
-   background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
 
    -- scrollbar
    enable_scroll_bar = true,
@@ -34,8 +34,10 @@ return {
    tab_max_width = 25,
    show_tab_index_in_tab_bar = false,
    switch_to_last_active_tab_when_closing_tab = true,
-
+   initial_cols = 108,
+   initial_rows = 25,
    -- window
+   window_decorations = "INTEGRATED_BUTTONS|RESIZE",
    window_padding = {
       left = 0,
       right = 0,
